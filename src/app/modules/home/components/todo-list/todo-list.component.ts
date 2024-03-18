@@ -11,4 +11,16 @@ export class TodoListComponent {
     { task: 'Minha primeira task', checked: false },
     { task: 'Minha segunda task', checked: false },
   ];
+
+  public deleteItemTaskList(event: number) {
+    this.taskList.splice(event, 1);
+  }
+
+  public deleteAllTaskList() {
+    const confirm = window.confirm('Deseja realmente limpar a lista?');
+
+    if (confirm) {
+      this.taskList = [];
+    }
+  }
 }
