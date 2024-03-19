@@ -7,10 +7,11 @@ import { TaskList } from '../../model/task-list';
   styleUrls: ['./todo-list.component.scss'],
 })
 export class TodoListComponent {
-  public taskList: Array<TaskList> = [
-    { task: 'Minha primeira task', checked: false },
-    { task: 'Minha segunda task', checked: false },
-  ];
+  public taskList: Array<TaskList> = [];
+
+  public addItemTaskList(event: string) {
+    return this.taskList.push({ task: event, checked: false });
+  }
 
   public deleteItemTaskList(event: number) {
     this.taskList.splice(event, 1);
