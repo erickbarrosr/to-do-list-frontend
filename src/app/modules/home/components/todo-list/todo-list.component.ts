@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { TaskList } from '../../model/task-list';
 
 @Component({
@@ -6,8 +6,14 @@ import { TaskList } from '../../model/task-list';
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss'],
 })
-export class TodoListComponent {
+export class TodoListComponent implements DoCheck {
   public taskList: Array<TaskList> = [];
+
+  ngDoCheck() {
+    this.taskList.sort((first, last) => {
+      return Number(first.checked) - Number(last.checked);
+    });
+  }
 
   public addItemTaskList(event: string) {
     return this.taskList.push({ task: event, checked: false });
