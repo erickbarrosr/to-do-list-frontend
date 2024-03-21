@@ -1,27 +1,61 @@
-# Frontend
+# To-Do List App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+This is a simple To-Do List application built using Angular and SCSS.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Add new tasks to the list
+- Mark tasks as completed
+- Delete tasks from the list
+- Filter tasks by status (All, Active, Completed)
+- Clear all completed tasks
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular: A JavaScript framework for building web applications.
+- SCSS: A CSS preprocessor that adds power and elegance to the basic CSS syntax.
 
-## Build
+## Setup Instructions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+   ```bash
+   git clone <https://github.com/erickbarrosr/to-do-list-frontend.git>
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navigate to the project directory:
 
-## Running end-to-end tests
+```bash
+cd to-do-list-frontend
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Install the dependecies:
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Run the development server:
+
+```bash
+ng serve
+```
+
+5. Open your web browser and visit http://localhost:4200 to view the application.
+
+## Folder Structure
+
+The project structure is organized as follows:
+
+- src/: Contains the source code of the application.
+- app/: Contains the Angular components, services, and other files.
+- assets/: Contains static assets such as images, fonts, etc.
+- styles/: Contains SCSS files for styling the application.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
