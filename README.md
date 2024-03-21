@@ -19,9 +19,9 @@ This is a simple To-Do List application built using Angular and SCSS.
 
 1. Clone the repository:
 
-   ```bash
-   git clone <https://github.com/erickbarrosr/to-do-list-frontend.git>
-   ```
+```bash
+git clone <https://github.com/erickbarrosr/to-do-list-frontend.git>
+```
 
 2. Navigate to the project directory:
 
